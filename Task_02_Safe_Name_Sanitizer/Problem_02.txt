@@ -1,0 +1,15 @@
+Task 2: The "Safe Name" Sanitizer (Strings)
+
+Scenario: A user wants to create a cloud bucket named `My Project Backup`. Cloud providers don't allow spaces or uppercase.
+
+Goal: Use string methods to:
+1. Strip whitespace
+2. Replace spaces with hyphens
+3. Convert to lowercase
+
+DevOps Value: Standardizing resource names in Terraform/Cloud scripts.
+
+Instructions:
+1. Start with the bucket name: "My Project Backup"
+2. Apply string transformations to make it cloud-provider friendly
+3. Print the sanitized name

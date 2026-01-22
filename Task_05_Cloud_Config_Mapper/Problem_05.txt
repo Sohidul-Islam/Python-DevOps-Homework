@@ -1,0 +1,13 @@
+Task 5: The Cloud Config Mapper (Dictionaries)
+
+Scenario: Create a dictionary representing a Virtual Machine with keys: `id`, `ip`, `status`, and `region`.
+
+Goal: Write a script that updates the `status` from `"running"` to `"stopped"` and adds a new key called `instance_type` with the value `"t3.large"`.
+
+DevOps Value: Mimicking JSON responses from AWS/Azure/GCP APIs.
+
+Instructions:
+1. Create a VM dictionary with keys: id, ip, status, region
+2. Update the status from "running" to "stopped"
+3. Add a new key "instance_type" with value "t3.large"
+4. Print the updated dictionary

@@ -1,0 +1,13 @@
+Task 7: The "Prod" Guard (Booleans & Conditionals)
+
+Scenario: A script is about to delete data.
+
+Goal: Create a variable `env = "production"`. Write an `if` statement that only prints "Executing Delete" if `env` is NOT equal to "production". Otherwise, print "Access Denied: Cannot delete in Prod!"
+
+DevOps Value: Implementing safety "gates" in CI/CD pipelines.
+
+Instructions:
+1. Create a variable env = "production"
+2. Write an if statement to check the environment
+3. Print "Executing Delete" only if NOT in production
+4. Otherwise print "Access Denied: Cannot delete in Prod!"

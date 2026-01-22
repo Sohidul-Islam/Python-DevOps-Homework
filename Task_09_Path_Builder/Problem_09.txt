@@ -1,0 +1,13 @@
+Task 9: The Path Builder (Pathlib/OS)
+
+Scenario: You are working on a script that must run on both Windows and Linux.
+
+Goal: Use `os.path.join` to combine the variables `base_dir = "/var/log"`, `app_name = "nginx"`, and `filename = "access.log"` into one valid path.
+
+DevOps Value: Avoiding "Hardcoded Path" bugs.
+
+Instructions:
+1. Define variables: base_dir = "/var/log", app_name = "nginx", filename = "access.log"
+2. Use os.path.join to combine them into a cross-platform path
+3. Print the resulting path
+4. Bonus: Show the same using pathlib

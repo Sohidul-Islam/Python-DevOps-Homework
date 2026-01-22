@@ -1,0 +1,13 @@
+Task 10: The Secret Masker (Slicing)
+
+Scenario: You accidentally printed an API Key to the console: `AKIA1234567890EXAMPLE`.
+
+Goal: Use slicing to print only the first 4 characters followed by asterisks (e.g., `AKIA**********`).
+
+DevOps Value: Security and compliance in logging.
+
+Instructions:
+1. Start with API key: "AKIA1234567890EXAMPLE"
+2. Use slicing to get the first 4 characters
+3. Calculate how many asterisks are needed
+4. Combine and print the masked version

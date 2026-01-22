@@ -1,0 +1,13 @@
+Task 6: The Log File Duplicator (OS & Shutil)
+
+Scenario: You need to test a new log-parsing script without ruining the original files.
+
+Goal: Write a script that looks for a file named `app.log` and creates 5 copies of it named `app_1.log`, `app_2.log`, etc.
+
+DevOps Value: Generating "mock data" for testing pipelines.
+
+Instructions:
+1. Create a sample app.log file (or check if it exists)
+2. Use shutil module to copy the file
+3. Create 5 copies named app_1.log, app_2.log, app_3.log, app_4.log, app_5.log
+4. Print confirmation messages
