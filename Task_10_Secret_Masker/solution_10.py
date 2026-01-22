@@ -1,16 +1,12 @@
 #!/usr/bin/env python3
-"""
-Task 10: The Secret Masker
-Mask sensitive information in logs
-"""
+# Task 10: Secret Masker - Hide sensitive data in logs
 
-# API Key that was accidentally printed
 api_key = "AKIA1234567890EXAMPLE"
 
-# Extract first 4 characters using slicing
+# Get first 4 characters
 visible_part = api_key[:4]
 
-# Calculate number of characters to mask
+# Calculate how many to mask
 masked_length = len(api_key) - 4
 
 # Create masked version
@@ -19,20 +15,12 @@ masked_key = visible_part + ("*" * masked_length)
 print(f"Original API Key: {api_key}")
 print(f"Masked API Key: {masked_key}")
 
-# More flexible masking function
+# Flexible masking function
 print("\n--- Flexible Masking Function ---")
 
 def mask_secret(secret, visible_chars=4, mask_char="*"):
     """
-    Mask a secret string, showing only the first few characters
-    
-    Args:
-        secret: The secret string to mask
-        visible_chars: Number of characters to show (default: 4)
-        mask_char: Character to use for masking (default: *)
-    
-    Returns:
-        Masked string
+    Mask a secret, showing only first few characters
     """
     if len(secret) <= visible_chars:
         return mask_char * len(secret)

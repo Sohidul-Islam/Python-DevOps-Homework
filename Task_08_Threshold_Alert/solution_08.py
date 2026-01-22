@@ -1,40 +1,34 @@
 #!/usr/bin/env python3
-"""
-Task 8: The Threshold Alert
-Format monitoring metrics for human-readable alerts
-"""
+# Task 8: Threshold Alert - Format CPU usage as percentage
 
-# CPU load from monitoring tool
 cpu_load = 0.88
 
-# Format as percentage using f-string
+# Convert to percentage
 percentage = f"{cpu_load * 100:.0f}%"
 print(f"CPU Load: {percentage}")
 
-# More detailed alert message
-alert_message = f"⚠️  ALERT: CPU usage is at {cpu_load * 100:.0f}%"
+# Create alert message
+alert_message = f"ALERT: CPU usage is at {cpu_load * 100:.0f}%"
 print(alert_message)
 
 # Different formatting options
 print("\n--- Different Formatting Options ---")
 
-# With decimal places
 print(f"With 1 decimal: {cpu_load * 100:.1f}%")
 print(f"With 2 decimals: {cpu_load * 100:.2f}%")
 
-# Complete monitoring alert system
+# Complete alert system
 print("\n--- Complete Alert System ---")
 
 def generate_alert(metric_name, value, threshold, unit="%"):
-    """Generate formatted alert message"""
     percentage = value * 100
     
     if percentage >= threshold:
-        status = "🔴 CRITICAL"
+        status = "CRITICAL"
     elif percentage >= threshold * 0.8:
-        status = "⚠️  WARNING"
+        status = "WARNING"
     else:
-        status = "✅ OK"
+        status = "OK"
     
     return f"{status}: {metric_name} is at {percentage:.0f}{unit} (Threshold: {threshold}%)"
 

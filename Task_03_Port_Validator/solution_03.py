@@ -1,16 +1,12 @@
 #!/usr/bin/env python3
-"""
-Task 3: The Port Validator
-Validate port numbers for firewall scripts
-"""
+# Task 3: Port Validator - Check if port numbers are valid
 
-# Port received as string
 port_string = "8080"
 
-# Convert string to integer
+# Convert to integer
 port = int(port_string)
 
-# Validate port range (1-65535)
+# Check if it's in the valid range
 if 1 <= port <= 65535:
     print("Valid")
 else:
